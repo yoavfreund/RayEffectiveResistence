@@ -43,35 +43,35 @@ class Tree:
         the semantics of which is P0 = pipe at the root. P0,0 == first pipe emanating from node 0.
         Pi,j,k,l  l'th pipe emanating from node Ni,j,k
         """
+        try:
+            self.pipe0=pipe(block_size=self.block_size)
+            self.pid_file_loop=self.executor._start(self.file_streamer,'File Streamer')
+            node=nd.Node(self.pipe0,self,epsilon=2900)
+            self.pid_node0=self.executor._start(node.find_cover_loop,'Cover Loop')
         
-        self.pipe0=pipe(block_size=self.block_size)
-        self.pid_file_loop=self.executor._start(self.file_streamer,'File Streamer')
-        node=nd.Node(self.pipe0,self,epsilon=2500)
-        self.pid_node0=self.executor._start(node.find_cover_loop,'Cover Loop')
-    
-        from time import sleep    
-        for i in range(4):
-            log.debug(f'main loop {i} node mode= {node.mode}')
-            log.debug(self.executor.futures)
-            
-#            for j in range(len(node.sinks)):
-#                p=node.sinks[j]
-#                log.warning(f'{j}: qsize={p.qsize()}, full={p.full()}') 
-                            
-            sleep(1)
-        
+            from time import sleep    
+            for i in range(4):
+                log.debug(f'main loop {i} node mode= {node.mode}')
+                log.debug(self.executor.futures)
+                
+                for j in range(len(node.sinks)):
+                    p=node.sinks[j]
+                    log.warning(f'{j}: qsize={p.qsize()}, full={p.full()}') 
+                                
+                sleep(1)
+        except Exception as exc:
+            log.exception(f'main  exception {exc}')
     
     def cover_found_callback(self,node:nd):
         try:
             log.warning(f'cover_found_callback {node.cover.shape}')
             node.refine_cover ()
             log.warning(f'cover_found_callback refined {node.cover.shape}')
-            self. create_children(node)
+            self.create_children(node)
             self.pid_split_loop=self.executor._start(node.splits_loop,'split loop')
             node.mode='splitting'
-            
+
     
-            
         except Exception as exc:
             log.exception(f'callback  exception {exc}')
 
@@ -88,8 +88,7 @@ class Tree:
             # self.pid_nodeloops.append(self.executor._start(nd.sinks[-1].find_cover_loop,f'Cover Loop {nd.i}')
         #self.pid_split_loop=self.executor._start(nd.splits_loop,f'Cover Loop {nd.i}')
         
-             
-           
+ 
     def file_streamer(self):
         log.info('file_streamer')
         data=np.load(self.in_handle)

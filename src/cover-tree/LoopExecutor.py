@@ -31,18 +31,23 @@ class LoopExecutor:
       logger.info(f'loop for {name} stopped')
 
    def _start(self,f,name,*args,**kwargs): 
-      logger.info(f'_start {name}')
-      run_flag=[True]
-      loop_counter=[0]
-      future=self.executor.submit(self.loop,run_flag,loop_counter,f,name,*args,**kwargs)
-      self.futures_counter+=1
-      self.executor._max_workers=self.futures_counter+1
-      self.futures[self.futures_counter]={'run_flag':run_flag,
-                                             'future':future,
-                                             'name':name,
-                                             'loop_counter':loop_counter
-                                             }
-      return self.futures_counter
+      try:
+         logger.info(f'_start {name}')
+         run_flag=[True]
+         loop_counter=[0]
+         self.futures_counter+=1
+         self.executor._max_workers=self.futures_counter+1
+         log.warning(f'executor={self.executor.__str__()}, name={name}  max_workers={self.executor._max_workers}')
+         future=self.executor.submit(self.loop,run_flag,loop_counter,f,name,*args,**kwargs)
+   
+         self.futures[self.futures_counter]={'run_flag':run_flag,
+                                                'future':future,
+                                                'name':name,
+                                                'loop_counter':loop_counter
+                                                }
+         return self.futures_counter
+      except Exception as exc:
+         logger.exception(f'exception {exc}')
    
    def _stop(self,index):
        

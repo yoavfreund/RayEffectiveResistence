@@ -163,7 +163,7 @@ if __name__=='__main__':
 
     cover=node.find_cover()
 
-    log.info('fron find_cover',cover.shape)
+    log.info(f'found cover shape={cover.shape}')
     stop_flag[0]=True
     executor.shutdown(wait=False,cancel_futures=True)
 
