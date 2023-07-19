@@ -30,8 +30,7 @@ class pipe:
             self.block=np.ones([0,w])
             
         while data.shape[0]>0:
-            if self.debug:
-                print('data shape=',data.shape[0],'block shape=',self.block.shape[0])
+            logger.info(f'data shape={data.shape[0]}, block shape={self.block.shape[0]}')
             # check if remaining data fits into buffer
             space=self.block_size-self.block.shape[0]
             if space<=data.shape[0]:
@@ -52,6 +51,8 @@ class pipe:
                 else:
                     logger.info(f'pipe put returned successfully, block size={self.block.shape}')
                     self.block=np.ones([0,w])
+            #from time import sleep
+            #sleep(0.1)
                                             
     def get(self):
         try:

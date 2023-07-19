@@ -1,0 +1,1282 @@
+    97 446 ThreadPoolExecutor-0_1 cover_found_callback cover_found_callback (5, 2)
+   102 450 ThreadPoolExecutor-0_1 cover_found_callback cover_found_callback refined (5, 2)
+   102 451 ThreadPoolExecutor-0_1 create_children 
+   102 451 ThreadPoolExecutor-0_1 create_children create_children 0, sinks=1
+   102 451 ThreadPoolExecutor-0_1 create_children create_children 1, sinks=2
+   102 451 ThreadPoolExecutor-0_1 create_children create_children 2, sinks=3
+   102 451 ThreadPoolExecutor-0_1 create_children create_children 3, sinks=4
+   102 451 ThreadPoolExecutor-0_1 create_children create_children 4, sinks=5
+   105 454 MainThread main main loop 0 node mode= split_loop
+   105 454 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [9]}}
+   105 454 MainThread main in pipe qsize=8, full=False
+   105 454 MainThread main 0: qsize=1, full=False
+   105 454 MainThread main 1: qsize=1, full=False
+   105 454 MainThread main 2: qsize=1, full=False
+   106 454 MainThread main 3: qsize=1, full=False
+   106 454 MainThread main 4: qsize=1, full=False
+  2108 457 MainThread main main loop 1 node mode= split_loop
+  2108 457 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+  2108 457 MainThread main in pipe qsize=10, full=True
+  2108 457 MainThread main 0: qsize=9, full=False
+  2108 457 MainThread main 1: qsize=10, full=True
+  2109 457 MainThread main 2: qsize=7, full=False
+  2109 457 MainThread main 3: qsize=10, full=True
+  2109 457 MainThread main 4: qsize=8, full=False
+  4113 462 MainThread main main loop 2 node mode= split_loop
+  4113 462 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+  4113 462 MainThread main in pipe qsize=10, full=True
+  4113 462 MainThread main 0: qsize=9, full=False
+  4114 463 MainThread main 1: qsize=10, full=True
+  4114 463 MainThread main 2: qsize=7, full=False
+  4114 463 MainThread main 3: qsize=10, full=True
+  4114 463 MainThread main 4: qsize=8, full=False
+  6115 464 MainThread main main loop 3 node mode= split_loop
+  6115 464 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+  6115 464 MainThread main in pipe qsize=10, full=True
+  6115 464 MainThread main 0: qsize=9, full=False
+  6115 464 MainThread main 1: qsize=10, full=True
+  6115 464 MainThread main 2: qsize=7, full=False
+  6115 464 MainThread main 3: qsize=10, full=True
+  6115 464 MainThread main 4: qsize=8, full=False
+  8120 469 MainThread main main loop 4 node mode= split_loop
+  8121 470 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+  8121 470 MainThread main in pipe qsize=10, full=True
+  8121 470 MainThread main 0: qsize=9, full=False
+  8121 470 MainThread main 1: qsize=10, full=True
+  8121 470 MainThread main 2: qsize=7, full=False
+  8121 470 MainThread main 3: qsize=10, full=True
+  8122 470 MainThread main 4: qsize=8, full=False
+ 10125 474 MainThread main main loop 5 node mode= split_loop
+ 10125 474 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 10125 474 MainThread main in pipe qsize=10, full=True
+ 10125 474 MainThread main 0: qsize=9, full=False
+ 10125 474 MainThread main 1: qsize=10, full=True
+ 10125 474 MainThread main 2: qsize=7, full=False
+ 10125 474 MainThread main 3: qsize=10, full=True
+ 10125 474 MainThread main 4: qsize=8, full=False
+ 12130 479 MainThread main main loop 6 node mode= split_loop
+ 12136 484 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 12136 485 MainThread main in pipe qsize=10, full=True
+ 12136 485 MainThread main 0: qsize=9, full=False
+ 12136 485 MainThread main 1: qsize=10, full=True
+ 12136 485 MainThread main 2: qsize=7, full=False
+ 12136 485 MainThread main 3: qsize=10, full=True
+ 12136 485 MainThread main 4: qsize=8, full=False
+ 14141 490 MainThread main main loop 7 node mode= split_loop
+ 14142 491 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 14142 491 MainThread main in pipe qsize=10, full=True
+ 14142 491 MainThread main 0: qsize=9, full=False
+ 14142 491 MainThread main 1: qsize=10, full=True
+ 14142 491 MainThread main 2: qsize=7, full=False
+ 14142 491 MainThread main 3: qsize=10, full=True
+ 14142 491 MainThread main 4: qsize=8, full=False
+ 16144 492 MainThread main main loop 8 node mode= split_loop
+ 16144 493 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 16144 493 MainThread main in pipe qsize=10, full=True
+ 16144 493 MainThread main 0: qsize=9, full=False
+ 16144 493 MainThread main 1: qsize=10, full=True
+ 16144 493 MainThread main 2: qsize=7, full=False
+ 16144 493 MainThread main 3: qsize=10, full=True
+ 16145 493 MainThread main 4: qsize=8, full=False
+ 18149 498 MainThread main main loop 9 node mode= split_loop
+ 18149 498 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 18149 498 MainThread main in pipe qsize=10, full=True
+ 18149 498 MainThread main 0: qsize=9, full=False
+ 18149 498 MainThread main 1: qsize=10, full=True
+ 18149 498 MainThread main 2: qsize=7, full=False
+ 18149 498 MainThread main 3: qsize=10, full=True
+ 18149 498 MainThread main 4: qsize=8, full=False
+ 20155 503 MainThread main main loop 10 node mode= split_loop
+ 20155 504 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 20155 504 MainThread main in pipe qsize=10, full=True
+ 20155 504 MainThread main 0: qsize=9, full=False
+ 20155 504 MainThread main 1: qsize=10, full=True
+ 20156 505 MainThread main 2: qsize=7, full=False
+ 20156 505 MainThread main 3: qsize=10, full=True
+ 20156 505 MainThread main 4: qsize=8, full=False
+ 22161 510 MainThread main main loop 11 node mode= split_loop
+ 22162 510 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 22162 510 MainThread main in pipe qsize=10, full=True
+ 22162 510 MainThread main 0: qsize=9, full=False
+ 22162 511 MainThread main 1: qsize=10, full=True
+ 22162 511 MainThread main 2: qsize=7, full=False
+ 22162 511 MainThread main 3: qsize=10, full=True
+ 22162 511 MainThread main 4: qsize=8, full=False
+ 24163 512 MainThread main main loop 12 node mode= split_loop
+ 24164 512 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 24164 513 MainThread main in pipe qsize=10, full=True
+ 24164 513 MainThread main 0: qsize=9, full=False
+ 24164 513 MainThread main 1: qsize=10, full=True
+ 24164 513 MainThread main 2: qsize=7, full=False
+ 24164 513 MainThread main 3: qsize=10, full=True
+ 24164 513 MainThread main 4: qsize=8, full=False
+ 26164 513 MainThread main main loop 13 node mode= split_loop
+ 26164 513 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 26164 513 MainThread main in pipe qsize=10, full=True
+ 26164 513 MainThread main 0: qsize=9, full=False
+ 26164 513 MainThread main 1: qsize=10, full=True
+ 26164 513 MainThread main 2: qsize=7, full=False
+ 26164 513 MainThread main 3: qsize=10, full=True
+ 26164 513 MainThread main 4: qsize=8, full=False
+ 28168 517 MainThread main main loop 14 node mode= split_loop
+ 28168 517 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 28168 517 MainThread main in pipe qsize=10, full=True
+ 28168 517 MainThread main 0: qsize=9, full=False
+ 28168 517 MainThread main 1: qsize=10, full=True
+ 28168 517 MainThread main 2: qsize=7, full=False
+ 28168 517 MainThread main 3: qsize=10, full=True
+ 28168 517 MainThread main 4: qsize=8, full=False
+ 30173 522 MainThread main main loop 15 node mode= split_loop
+ 30173 522 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 30173 522 MainThread main in pipe qsize=10, full=True
+ 30173 522 MainThread main 0: qsize=9, full=False
+ 30173 522 MainThread main 1: qsize=10, full=True
+ 30173 522 MainThread main 2: qsize=7, full=False
+ 30173 522 MainThread main 3: qsize=10, full=True
+ 30173 522 MainThread main 4: qsize=8, full=False
+ 32174 523 MainThread main main loop 16 node mode= split_loop
+ 32174 523 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 32174 523 MainThread main in pipe qsize=10, full=True
+ 32174 523 MainThread main 0: qsize=9, full=False
+ 32174 523 MainThread main 1: qsize=10, full=True
+ 32174 523 MainThread main 2: qsize=7, full=False
+ 32174 523 MainThread main 3: qsize=10, full=True
+ 32174 523 MainThread main 4: qsize=8, full=False
+ 34174 523 MainThread main main loop 17 node mode= split_loop
+ 34175 523 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 34175 523 MainThread main in pipe qsize=10, full=True
+ 34175 524 MainThread main 0: qsize=9, full=False
+ 34175 524 MainThread main 1: qsize=10, full=True
+ 34175 524 MainThread main 2: qsize=7, full=False
+ 34175 524 MainThread main 3: qsize=10, full=True
+ 34175 524 MainThread main 4: qsize=8, full=False
+ 36175 524 MainThread main main loop 18 node mode= split_loop
+ 36176 524 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 36176 524 MainThread main in pipe qsize=10, full=True
+ 36176 524 MainThread main 0: qsize=9, full=False
+ 36176 524 MainThread main 1: qsize=10, full=True
+ 36176 524 MainThread main 2: qsize=7, full=False
+ 36176 525 MainThread main 3: qsize=10, full=True
+ 36176 525 MainThread main 4: qsize=8, full=False
+ 38176 525 MainThread main main loop 19 node mode= split_loop
+ 38177 525 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 38177 525 MainThread main in pipe qsize=10, full=True
+ 38177 525 MainThread main 0: qsize=9, full=False
+ 38177 525 MainThread main 1: qsize=10, full=True
+ 38177 525 MainThread main 2: qsize=7, full=False
+ 38177 525 MainThread main 3: qsize=10, full=True
+ 38177 525 MainThread main 4: qsize=8, full=False
+ 40182 530 MainThread main main loop 20 node mode= split_loop
+ 40182 531 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 40182 531 MainThread main in pipe qsize=10, full=True
+ 40182 531 MainThread main 0: qsize=9, full=False
+ 40182 531 MainThread main 1: qsize=10, full=True
+ 40182 531 MainThread main 2: qsize=7, full=False
+ 40182 531 MainThread main 3: qsize=10, full=True
+ 40182 531 MainThread main 4: qsize=8, full=False
+ 42184 533 MainThread main main loop 21 node mode= split_loop
+ 42184 533 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 42184 533 MainThread main in pipe qsize=10, full=True
+ 42184 533 MainThread main 0: qsize=9, full=False
+ 42184 533 MainThread main 1: qsize=10, full=True
+ 42184 533 MainThread main 2: qsize=7, full=False
+ 42184 533 MainThread main 3: qsize=10, full=True
+ 42184 533 MainThread main 4: qsize=8, full=False
+ 44189 538 MainThread main main loop 22 node mode= split_loop
+ 44189 538 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 44189 538 MainThread main in pipe qsize=10, full=True
+ 44189 538 MainThread main 0: qsize=9, full=False
+ 44189 538 MainThread main 1: qsize=10, full=True
+ 44189 538 MainThread main 2: qsize=7, full=False
+ 44189 538 MainThread main 3: qsize=10, full=True
+ 44189 538 MainThread main 4: qsize=8, full=False
+ 46194 543 MainThread main main loop 23 node mode= split_loop
+ 46194 543 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 46194 543 MainThread main in pipe qsize=10, full=True
+ 46194 543 MainThread main 0: qsize=9, full=False
+ 46194 543 MainThread main 1: qsize=10, full=True
+ 46194 543 MainThread main 2: qsize=7, full=False
+ 46194 543 MainThread main 3: qsize=10, full=True
+ 46194 543 MainThread main 4: qsize=8, full=False
+ 48196 545 MainThread main main loop 24 node mode= split_loop
+ 48197 545 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 48197 546 MainThread main in pipe qsize=10, full=True
+ 48197 546 MainThread main 0: qsize=9, full=False
+ 48197 546 MainThread main 1: qsize=10, full=True
+ 48197 546 MainThread main 2: qsize=7, full=False
+ 48197 546 MainThread main 3: qsize=10, full=True
+ 48197 546 MainThread main 4: qsize=8, full=False
+ 50203 551 MainThread main main loop 25 node mode= split_loop
+ 50203 552 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 50203 552 MainThread main in pipe qsize=10, full=True
+ 50203 552 MainThread main 0: qsize=9, full=False
+ 50203 552 MainThread main 1: qsize=10, full=True
+ 50203 552 MainThread main 2: qsize=7, full=False
+ 50203 552 MainThread main 3: qsize=10, full=True
+ 50203 552 MainThread main 4: qsize=8, full=False
+ 52204 553 MainThread main main loop 26 node mode= split_loop
+ 52204 553 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 52204 553 MainThread main in pipe qsize=10, full=True
+ 52204 553 MainThread main 0: qsize=9, full=False
+ 52204 553 MainThread main 1: qsize=10, full=True
+ 52204 553 MainThread main 2: qsize=7, full=False
+ 52204 553 MainThread main 3: qsize=10, full=True
+ 52204 553 MainThread main 4: qsize=8, full=False
+ 54209 558 MainThread main main loop 27 node mode= split_loop
+ 54210 559 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 54210 559 MainThread main in pipe qsize=10, full=True
+ 54211 559 MainThread main 0: qsize=9, full=False
+ 54211 559 MainThread main 1: qsize=10, full=True
+ 54211 559 MainThread main 2: qsize=7, full=False
+ 54211 560 MainThread main 3: qsize=10, full=True
+ 54211 560 MainThread main 4: qsize=8, full=False
+ 56216 565 MainThread main main loop 28 node mode= split_loop
+ 56216 565 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 56216 565 MainThread main in pipe qsize=10, full=True
+ 56216 565 MainThread main 0: qsize=9, full=False
+ 56216 565 MainThread main 1: qsize=10, full=True
+ 56216 565 MainThread main 2: qsize=7, full=False
+ 56216 565 MainThread main 3: qsize=10, full=True
+ 56216 565 MainThread main 4: qsize=8, full=False
+ 58218 567 MainThread main main loop 29 node mode= split_loop
+ 58218 567 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 58218 567 MainThread main in pipe qsize=10, full=True
+ 58218 567 MainThread main 0: qsize=9, full=False
+ 58218 567 MainThread main 1: qsize=10, full=True
+ 58218 567 MainThread main 2: qsize=7, full=False
+ 58218 567 MainThread main 3: qsize=10, full=True
+ 58219 567 MainThread main 4: qsize=8, full=False
+ 60224 572 MainThread main main loop 30 node mode= split_loop
+ 60224 573 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 60224 573 MainThread main in pipe qsize=10, full=True
+ 60224 573 MainThread main 0: qsize=9, full=False
+ 60224 573 MainThread main 1: qsize=10, full=True
+ 60224 573 MainThread main 2: qsize=7, full=False
+ 60224 573 MainThread main 3: qsize=10, full=True
+ 60225 573 MainThread main 4: qsize=8, full=False
+ 62228 577 MainThread main main loop 31 node mode= split_loop
+ 62229 577 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 62229 578 MainThread main in pipe qsize=10, full=True
+ 62229 578 MainThread main 0: qsize=9, full=False
+ 62229 578 MainThread main 1: qsize=10, full=True
+ 62229 578 MainThread main 2: qsize=7, full=False
+ 62229 578 MainThread main 3: qsize=10, full=True
+ 62229 578 MainThread main 4: qsize=8, full=False
+ 64230 579 MainThread main main loop 32 node mode= split_loop
+ 64231 580 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 64231 580 MainThread main in pipe qsize=10, full=True
+ 64231 580 MainThread main 0: qsize=9, full=False
+ 64231 580 MainThread main 1: qsize=10, full=True
+ 64231 580 MainThread main 2: qsize=7, full=False
+ 64232 580 MainThread main 3: qsize=10, full=True
+ 64232 581 MainThread main 4: qsize=8, full=False
+ 66237 586 MainThread main main loop 33 node mode= split_loop
+ 66238 587 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 66241 590 MainThread main in pipe qsize=10, full=True
+ 66241 590 MainThread main 0: qsize=9, full=False
+ 66241 590 MainThread main 1: qsize=10, full=True
+ 66241 590 MainThread main 2: qsize=7, full=False
+ 66241 590 MainThread main 3: qsize=10, full=True
+ 66241 590 MainThread main 4: qsize=8, full=False
+ 68246 595 MainThread main main loop 34 node mode= split_loop
+ 68247 596 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 68247 596 MainThread main in pipe qsize=10, full=True
+ 68247 596 MainThread main 0: qsize=9, full=False
+ 68247 596 MainThread main 1: qsize=10, full=True
+ 68247 596 MainThread main 2: qsize=7, full=False
+ 68248 597 MainThread main 3: qsize=10, full=True
+ 68248 597 MainThread main 4: qsize=8, full=False
+ 70252 601 MainThread main main loop 35 node mode= split_loop
+ 70253 602 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 70253 602 MainThread main in pipe qsize=10, full=True
+ 70253 602 MainThread main 0: qsize=9, full=False
+ 70253 602 MainThread main 1: qsize=10, full=True
+ 70253 602 MainThread main 2: qsize=7, full=False
+ 70253 602 MainThread main 3: qsize=10, full=True
+ 70253 602 MainThread main 4: qsize=8, full=False
+ 72254 603 MainThread main main loop 36 node mode= split_loop
+ 72254 603 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 72254 603 MainThread main in pipe qsize=10, full=True
+ 72254 603 MainThread main 0: qsize=9, full=False
+ 72254 603 MainThread main 1: qsize=10, full=True
+ 72254 603 MainThread main 2: qsize=7, full=False
+ 72254 603 MainThread main 3: qsize=10, full=True
+ 72254 603 MainThread main 4: qsize=8, full=False
+ 74263 612 MainThread main main loop 37 node mode= split_loop
+ 74263 612 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 74263 612 MainThread main in pipe qsize=10, full=True
+ 74263 612 MainThread main 0: qsize=9, full=False
+ 74263 612 MainThread main 1: qsize=10, full=True
+ 74263 612 MainThread main 2: qsize=7, full=False
+ 74264 612 MainThread main 3: qsize=10, full=True
+ 74264 612 MainThread main 4: qsize=8, full=False
+ 76268 617 MainThread main main loop 38 node mode= split_loop
+ 76268 617 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 76269 617 MainThread main in pipe qsize=10, full=True
+ 76269 617 MainThread main 0: qsize=9, full=False
+ 76269 618 MainThread main 1: qsize=10, full=True
+ 76269 618 MainThread main 2: qsize=7, full=False
+ 76269 618 MainThread main 3: qsize=10, full=True
+ 76269 618 MainThread main 4: qsize=8, full=False
+ 78274 623 MainThread main main loop 39 node mode= split_loop
+ 78274 623 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x124047910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x124047cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [50]}}
+ 78274 623 MainThread main in pipe qsize=10, full=True
+ 78275 623 MainThread main 0: qsize=9, full=False
+ 78275 624 MainThread main 1: qsize=10, full=True
+ 78275 624 MainThread main 2: qsize=7, full=False
+ 78275 624 MainThread main 3: qsize=10, full=True
+ 78275 624 MainThread main 4: qsize=8, full=False
+    59 MainThread main main loop 0 node mode= find_cover
+    59 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [1]}}
+    63 MainThread main in pipe qsize=10, full=True
+    74 ThreadPoolExecutor-0_1 cover_found_callback cover_found_callback (5, 2)
+    75 ThreadPoolExecutor-0_1 cover_found_callback cover_found_callback refined (5, 2)
+    75 ThreadPoolExecutor-0_1 create_children 
+    75 ThreadPoolExecutor-0_1 create_children create_children 0, sinks=1
+    75 ThreadPoolExecutor-0_1 create_children create_children 1, sinks=2
+    75 ThreadPoolExecutor-0_1 create_children create_children 2, sinks=3
+    75 ThreadPoolExecutor-0_1 create_children create_children 3, sinks=4
+    75 ThreadPoolExecutor-0_1 create_children create_children 4, sinks=5
+  2068 MainThread main main loop 1 node mode= split_loop
+  2068 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+  2068 MainThread main in pipe qsize=10, full=True
+  2068 MainThread main 0: qsize=9, full=False
+  2068 MainThread main 1: qsize=10, full=True
+  2068 MainThread main 2: qsize=7, full=False
+  2068 MainThread main 3: qsize=10, full=True
+  2068 MainThread main 4: qsize=8, full=False
+  4075 MainThread main main loop 2 node mode= split_loop
+  4076 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+  4076 MainThread main in pipe qsize=10, full=True
+  4076 MainThread main 0: qsize=9, full=False
+  4076 MainThread main 1: qsize=10, full=True
+  4076 MainThread main 2: qsize=7, full=False
+  4076 MainThread main 3: qsize=10, full=True
+  4076 MainThread main 4: qsize=8, full=False
+  6081 MainThread main main loop 3 node mode= split_loop
+  6087 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+  6087 MainThread main in pipe qsize=10, full=True
+  6087 MainThread main 0: qsize=9, full=False
+  6087 MainThread main 1: qsize=10, full=True
+  6087 MainThread main 2: qsize=7, full=False
+  6087 MainThread main 3: qsize=10, full=True
+  6087 MainThread main 4: qsize=8, full=False
+  8092 MainThread main main loop 4 node mode= split_loop
+  8093 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+  8093 MainThread main in pipe qsize=10, full=True
+  8093 MainThread main 0: qsize=9, full=False
+  8093 MainThread main 1: qsize=10, full=True
+  8093 MainThread main 2: qsize=7, full=False
+  8093 MainThread main 3: qsize=10, full=True
+  8093 MainThread main 4: qsize=8, full=False
+ 10097 MainThread main main loop 5 node mode= split_loop
+ 10097 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 10097 MainThread main in pipe qsize=10, full=True
+ 10097 MainThread main 0: qsize=9, full=False
+ 10097 MainThread main 1: qsize=10, full=True
+ 10098 MainThread main 2: qsize=7, full=False
+ 10098 MainThread main 3: qsize=10, full=True
+ 10098 MainThread main 4: qsize=8, full=False
+ 12101 MainThread main main loop 6 node mode= split_loop
+ 12102 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 12102 MainThread main in pipe qsize=10, full=True
+ 12102 MainThread main 0: qsize=9, full=False
+ 12102 MainThread main 1: qsize=10, full=True
+ 12102 MainThread main 2: qsize=7, full=False
+ 12102 MainThread main 3: qsize=10, full=True
+ 12102 MainThread main 4: qsize=8, full=False
+ 14104 MainThread main main loop 7 node mode= split_loop
+ 14104 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 14104 MainThread main in pipe qsize=10, full=True
+ 14104 MainThread main 0: qsize=9, full=False
+ 14104 MainThread main 1: qsize=10, full=True
+ 14104 MainThread main 2: qsize=7, full=False
+ 14104 MainThread main 3: qsize=10, full=True
+ 14104 MainThread main 4: qsize=8, full=False
+ 16108 MainThread main main loop 8 node mode= split_loop
+ 16108 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 16108 MainThread main in pipe qsize=10, full=True
+ 16108 MainThread main 0: qsize=9, full=False
+ 16108 MainThread main 1: qsize=10, full=True
+ 16108 MainThread main 2: qsize=7, full=False
+ 16108 MainThread main 3: qsize=10, full=True
+ 16108 MainThread main 4: qsize=8, full=False
+ 18109 MainThread main main loop 9 node mode= split_loop
+ 18109 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 18109 MainThread main in pipe qsize=10, full=True
+ 18109 MainThread main 0: qsize=9, full=False
+ 18109 MainThread main 1: qsize=10, full=True
+ 18109 MainThread main 2: qsize=7, full=False
+ 18109 MainThread main 3: qsize=10, full=True
+ 18109 MainThread main 4: qsize=8, full=False
+ 20110 MainThread main main loop 10 node mode= split_loop
+ 20110 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 20110 MainThread main in pipe qsize=10, full=True
+ 20110 MainThread main 0: qsize=9, full=False
+ 20110 MainThread main 1: qsize=10, full=True
+ 20110 MainThread main 2: qsize=7, full=False
+ 20110 MainThread main 3: qsize=10, full=True
+ 20110 MainThread main 4: qsize=8, full=False
+ 22114 MainThread main main loop 11 node mode= split_loop
+ 22115 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 22115 MainThread main in pipe qsize=10, full=True
+ 22115 MainThread main 0: qsize=9, full=False
+ 22115 MainThread main 1: qsize=10, full=True
+ 22115 MainThread main 2: qsize=7, full=False
+ 22115 MainThread main 3: qsize=10, full=True
+ 22115 MainThread main 4: qsize=8, full=False
+ 24120 MainThread main main loop 12 node mode= split_loop
+ 24120 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 24120 MainThread main in pipe qsize=10, full=True
+ 24120 MainThread main 0: qsize=9, full=False
+ 24120 MainThread main 1: qsize=10, full=True
+ 24120 MainThread main 2: qsize=7, full=False
+ 24120 MainThread main 3: qsize=10, full=True
+ 24120 MainThread main 4: qsize=8, full=False
+ 26122 MainThread main main loop 13 node mode= split_loop
+ 26122 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 26122 MainThread main in pipe qsize=10, full=True
+ 26122 MainThread main 0: qsize=9, full=False
+ 26122 MainThread main 1: qsize=10, full=True
+ 26123 MainThread main 2: qsize=7, full=False
+ 26123 MainThread main 3: qsize=10, full=True
+ 26123 MainThread main 4: qsize=8, full=False
+ 28124 MainThread main main loop 14 node mode= split_loop
+ 28124 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 28124 MainThread main in pipe qsize=10, full=True
+ 28124 MainThread main 0: qsize=9, full=False
+ 28124 MainThread main 1: qsize=10, full=True
+ 28124 MainThread main 2: qsize=7, full=False
+ 28124 MainThread main 3: qsize=10, full=True
+ 28124 MainThread main 4: qsize=8, full=False
+ 30126 MainThread main main loop 15 node mode= split_loop
+ 30127 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 30127 MainThread main in pipe qsize=10, full=True
+ 30127 MainThread main 0: qsize=9, full=False
+ 30127 MainThread main 1: qsize=10, full=True
+ 30127 MainThread main 2: qsize=7, full=False
+ 30127 MainThread main 3: qsize=10, full=True
+ 30127 MainThread main 4: qsize=8, full=False
+ 32132 MainThread main main loop 16 node mode= split_loop
+ 32132 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 32132 MainThread main in pipe qsize=10, full=True
+ 32132 MainThread main 0: qsize=9, full=False
+ 32132 MainThread main 1: qsize=10, full=True
+ 32132 MainThread main 2: qsize=7, full=False
+ 32132 MainThread main 3: qsize=10, full=True
+ 32132 MainThread main 4: qsize=8, full=False
+ 34135 MainThread main main loop 17 node mode= split_loop
+ 34137 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 34137 MainThread main in pipe qsize=10, full=True
+ 34137 MainThread main 0: qsize=9, full=False
+ 34137 MainThread main 1: qsize=10, full=True
+ 34137 MainThread main 2: qsize=7, full=False
+ 34137 MainThread main 3: qsize=10, full=True
+ 34137 MainThread main 4: qsize=8, full=False
+ 36138 MainThread main main loop 18 node mode= split_loop
+ 36138 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 36138 MainThread main in pipe qsize=10, full=True
+ 36138 MainThread main 0: qsize=9, full=False
+ 36138 MainThread main 1: qsize=10, full=True
+ 36138 MainThread main 2: qsize=7, full=False
+ 36138 MainThread main 3: qsize=10, full=True
+ 36138 MainThread main 4: qsize=8, full=False
+ 38143 MainThread main main loop 19 node mode= split_loop
+ 38144 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 38144 MainThread main in pipe qsize=10, full=True
+ 38144 MainThread main 0: qsize=9, full=False
+ 38144 MainThread main 1: qsize=10, full=True
+ 38144 MainThread main 2: qsize=7, full=False
+ 38144 MainThread main 3: qsize=10, full=True
+ 38144 MainThread main 4: qsize=8, full=False
+ 40146 MainThread main main loop 20 node mode= split_loop
+ 40149 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 40149 MainThread main in pipe qsize=10, full=True
+ 40149 MainThread main 0: qsize=9, full=False
+ 40150 MainThread main 1: qsize=10, full=True
+ 40150 MainThread main 2: qsize=7, full=False
+ 40150 MainThread main 3: qsize=10, full=True
+ 40150 MainThread main 4: qsize=8, full=False
+ 42153 MainThread main main loop 21 node mode= split_loop
+ 42153 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 42153 MainThread main in pipe qsize=10, full=True
+ 42153 MainThread main 0: qsize=9, full=False
+ 42153 MainThread main 1: qsize=10, full=True
+ 42153 MainThread main 2: qsize=7, full=False
+ 42153 MainThread main 3: qsize=10, full=True
+ 42153 MainThread main 4: qsize=8, full=False
+ 44155 MainThread main main loop 22 node mode= split_loop
+ 44156 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 44156 MainThread main in pipe qsize=10, full=True
+ 44156 MainThread main 0: qsize=9, full=False
+ 44156 MainThread main 1: qsize=10, full=True
+ 44157 MainThread main 2: qsize=7, full=False
+ 44157 MainThread main 3: qsize=10, full=True
+ 44157 MainThread main 4: qsize=8, full=False
+ 46161 MainThread main main loop 23 node mode= split_loop
+ 46162 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 46162 MainThread main in pipe qsize=10, full=True
+ 46162 MainThread main 0: qsize=9, full=False
+ 46162 MainThread main 1: qsize=10, full=True
+ 46162 MainThread main 2: qsize=7, full=False
+ 46162 MainThread main 3: qsize=10, full=True
+ 46162 MainThread main 4: qsize=8, full=False
+ 48166 MainThread main main loop 24 node mode= split_loop
+ 48166 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 48166 MainThread main in pipe qsize=10, full=True
+ 48166 MainThread main 0: qsize=9, full=False
+ 48166 MainThread main 1: qsize=10, full=True
+ 48166 MainThread main 2: qsize=7, full=False
+ 48166 MainThread main 3: qsize=10, full=True
+ 48166 MainThread main 4: qsize=8, full=False
+ 50179 MainThread main main loop 25 node mode= split_loop
+ 50179 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 50179 MainThread main in pipe qsize=10, full=True
+ 50180 MainThread main 0: qsize=9, full=False
+ 50180 MainThread main 1: qsize=10, full=True
+ 50180 MainThread main 2: qsize=7, full=False
+ 50180 MainThread main 3: qsize=10, full=True
+ 50180 MainThread main 4: qsize=8, full=False
+ 52182 MainThread main main loop 26 node mode= split_loop
+ 52182 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 52182 MainThread main in pipe qsize=10, full=True
+ 52182 MainThread main 0: qsize=9, full=False
+ 52182 MainThread main 1: qsize=10, full=True
+ 52182 MainThread main 2: qsize=7, full=False
+ 52182 MainThread main 3: qsize=10, full=True
+ 52182 MainThread main 4: qsize=8, full=False
+ 54185 MainThread main main loop 27 node mode= split_loop
+ 54185 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 54185 MainThread main in pipe qsize=10, full=True
+ 54185 MainThread main 0: qsize=9, full=False
+ 54185 MainThread main 1: qsize=10, full=True
+ 54185 MainThread main 2: qsize=7, full=False
+ 54185 MainThread main 3: qsize=10, full=True
+ 54185 MainThread main 4: qsize=8, full=False
+ 56186 MainThread main main loop 28 node mode= split_loop
+ 56186 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 56187 MainThread main in pipe qsize=10, full=True
+ 56187 MainThread main 0: qsize=9, full=False
+ 56187 MainThread main 1: qsize=10, full=True
+ 56187 MainThread main 2: qsize=7, full=False
+ 56187 MainThread main 3: qsize=10, full=True
+ 56187 MainThread main 4: qsize=8, full=False
+ 58188 MainThread main main loop 29 node mode= split_loop
+ 58189 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 58190 MainThread main in pipe qsize=10, full=True
+ 58190 MainThread main 0: qsize=9, full=False
+ 58190 MainThread main 1: qsize=10, full=True
+ 58190 MainThread main 2: qsize=7, full=False
+ 58190 MainThread main 3: qsize=10, full=True
+ 58190 MainThread main 4: qsize=8, full=False
+ 60196 MainThread main main loop 30 node mode= split_loop
+ 60196 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 60196 MainThread main in pipe qsize=10, full=True
+ 60196 MainThread main 0: qsize=9, full=False
+ 60196 MainThread main 1: qsize=10, full=True
+ 60196 MainThread main 2: qsize=7, full=False
+ 60196 MainThread main 3: qsize=10, full=True
+ 60196 MainThread main 4: qsize=8, full=False
+ 62199 MainThread main main loop 31 node mode= split_loop
+ 62199 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 62199 MainThread main in pipe qsize=10, full=True
+ 62199 MainThread main 0: qsize=9, full=False
+ 62199 MainThread main 1: qsize=10, full=True
+ 62200 MainThread main 2: qsize=7, full=False
+ 62200 MainThread main 3: qsize=10, full=True
+ 62200 MainThread main 4: qsize=8, full=False
+ 64201 MainThread main main loop 32 node mode= split_loop
+ 64202 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 64202 MainThread main in pipe qsize=10, full=True
+ 64202 MainThread main 0: qsize=9, full=False
+ 64203 MainThread main 1: qsize=10, full=True
+ 64203 MainThread main 2: qsize=7, full=False
+ 64203 MainThread main 3: qsize=10, full=True
+ 64203 MainThread main 4: qsize=8, full=False
+ 66209 MainThread main main loop 33 node mode= split_loop
+ 66209 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 66209 MainThread main in pipe qsize=10, full=True
+ 66209 MainThread main 0: qsize=9, full=False
+ 66209 MainThread main 1: qsize=10, full=True
+ 66209 MainThread main 2: qsize=7, full=False
+ 66209 MainThread main 3: qsize=10, full=True
+ 66209 MainThread main 4: qsize=8, full=False
+ 68219 MainThread main main loop 34 node mode= split_loop
+ 68219 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 68219 MainThread main in pipe qsize=10, full=True
+ 68220 MainThread main 0: qsize=9, full=False
+ 68220 MainThread main 1: qsize=10, full=True
+ 68220 MainThread main 2: qsize=7, full=False
+ 68220 MainThread main 3: qsize=10, full=True
+ 68220 MainThread main 4: qsize=8, full=False
+ 70220 MainThread main main loop 35 node mode= split_loop
+ 70220 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 70220 MainThread main in pipe qsize=10, full=True
+ 70220 MainThread main 0: qsize=9, full=False
+ 70220 MainThread main 1: qsize=10, full=True
+ 70220 MainThread main 2: qsize=7, full=False
+ 70221 MainThread main 3: qsize=10, full=True
+ 70221 MainThread main 4: qsize=8, full=False
+ 72225 MainThread main main loop 36 node mode= split_loop
+ 72225 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 72225 MainThread main in pipe qsize=10, full=True
+ 72225 MainThread main 0: qsize=9, full=False
+ 72225 MainThread main 1: qsize=10, full=True
+ 72225 MainThread main 2: qsize=7, full=False
+ 72225 MainThread main 3: qsize=10, full=True
+ 72225 MainThread main 4: qsize=8, full=False
+ 74231 MainThread main main loop 37 node mode= split_loop
+ 74232 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 74232 MainThread main in pipe qsize=10, full=True
+ 74232 MainThread main 0: qsize=9, full=False
+ 74232 MainThread main 1: qsize=10, full=True
+ 74232 MainThread main 2: qsize=7, full=False
+ 74233 MainThread main 3: qsize=10, full=True
+ 74233 MainThread main 4: qsize=8, full=False
+ 76235 MainThread main main loop 38 node mode= split_loop
+ 76235 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 76235 MainThread main in pipe qsize=10, full=True
+ 76235 MainThread main 0: qsize=9, full=False
+ 76235 MainThread main 1: qsize=10, full=True
+ 76235 MainThread main 2: qsize=7, full=False
+ 76235 MainThread main 3: qsize=10, full=True
+ 76236 MainThread main 4: qsize=8, full=False
+ 78241 MainThread main main loop 39 node mode= split_loop
+ 78242 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x1244f3910 state=running>, 'name': 'File Streamer', 'loop_counter': [6]}, 2: {'run_flag': [True], 'future': <Future at 0x1244f3cd0 state=running>, 'name': 'Node Loop', 'loop_counter': [49]}}
+ 78242 MainThread main in pipe qsize=10, full=True
+ 78242 MainThread main 0: qsize=9, full=False
+ 78242 MainThread main 1: qsize=10, full=True
+ 78242 MainThread main 2: qsize=7, full=False
+ 78242 MainThread main 3: qsize=10, full=True
+ 78243 MainThread main 4: qsize=8, full=False
+   287 MainThread main main loop 0 node mode= find_cover
+   287 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [1]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=running>, 'name': 'Node Loop', 'loop_counter': [1]}}
+   287 MainThread main in pipe qsize=0, full=False
+   307 ThreadPoolExecutor-0_1 cover_found_callback cover_found_callback (5, 2)
+   308 ThreadPoolExecutor-0_1 cover_found_callback cover_found_callback refined (5, 2)
+   308 ThreadPoolExecutor-0_1 create_children 
+   308 ThreadPoolExecutor-0_1 create_children create_children 0, sinks=1
+   308 ThreadPoolExecutor-0_1 create_children create_children 1, sinks=2
+   308 ThreadPoolExecutor-0_1 create_children create_children 2, sinks=3
+   308 ThreadPoolExecutor-0_1 create_children create_children 3, sinks=4
+   308 ThreadPoolExecutor-0_1 create_children create_children 4, sinks=5
+   309 ThreadPoolExecutor-0_1 splits_loop counters=[401. 454. 317. 441. 387.]
+  2292 MainThread main main loop 1 node mode= split_loop
+  2292 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+  2293 MainThread main in pipe qsize=10, full=True
+  2293 MainThread main 0: qsize=0, full=False
+  2293 MainThread main 1: qsize=0, full=False
+  2293 MainThread main 2: qsize=0, full=False
+  2293 MainThread main 3: qsize=0, full=False
+  2293 MainThread main 4: qsize=0, full=False
+  4298 MainThread main main loop 2 node mode= split_loop
+  4298 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+  4298 MainThread main in pipe qsize=10, full=True
+  4298 MainThread main 0: qsize=0, full=False
+  4298 MainThread main 1: qsize=0, full=False
+  4298 MainThread main 2: qsize=0, full=False
+  4298 MainThread main 3: qsize=0, full=False
+  4298 MainThread main 4: qsize=0, full=False
+  6304 MainThread main main loop 3 node mode= split_loop
+  6308 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+  6308 MainThread main in pipe qsize=10, full=True
+  6308 MainThread main 0: qsize=0, full=False
+  6308 MainThread main 1: qsize=0, full=False
+  6308 MainThread main 2: qsize=0, full=False
+  6309 MainThread main 3: qsize=0, full=False
+  6309 MainThread main 4: qsize=0, full=False
+  8313 MainThread main main loop 4 node mode= split_loop
+  8313 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+  8314 MainThread main in pipe qsize=10, full=True
+  8314 MainThread main 0: qsize=0, full=False
+  8314 MainThread main 1: qsize=0, full=False
+  8314 MainThread main 2: qsize=0, full=False
+  8314 MainThread main 3: qsize=0, full=False
+  8315 MainThread main 4: qsize=0, full=False
+ 10316 MainThread main main loop 5 node mode= split_loop
+ 10316 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 10316 MainThread main in pipe qsize=10, full=True
+ 10317 MainThread main 0: qsize=0, full=False
+ 10317 MainThread main 1: qsize=0, full=False
+ 10317 MainThread main 2: qsize=0, full=False
+ 10317 MainThread main 3: qsize=0, full=False
+ 10317 MainThread main 4: qsize=0, full=False
+ 12322 MainThread main main loop 6 node mode= split_loop
+ 12323 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 12323 MainThread main in pipe qsize=10, full=True
+ 12323 MainThread main 0: qsize=0, full=False
+ 12323 MainThread main 1: qsize=0, full=False
+ 12324 MainThread main 2: qsize=0, full=False
+ 12324 MainThread main 3: qsize=0, full=False
+ 12324 MainThread main 4: qsize=0, full=False
+ 14326 MainThread main main loop 7 node mode= split_loop
+ 14327 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 14327 MainThread main in pipe qsize=10, full=True
+ 14327 MainThread main 0: qsize=0, full=False
+ 14328 MainThread main 1: qsize=0, full=False
+ 14328 MainThread main 2: qsize=0, full=False
+ 14328 MainThread main 3: qsize=0, full=False
+ 14328 MainThread main 4: qsize=0, full=False
+ 16333 MainThread main main loop 8 node mode= split_loop
+ 16333 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 16333 MainThread main in pipe qsize=10, full=True
+ 16333 MainThread main 0: qsize=0, full=False
+ 16333 MainThread main 1: qsize=0, full=False
+ 16334 MainThread main 2: qsize=0, full=False
+ 16334 MainThread main 3: qsize=0, full=False
+ 16334 MainThread main 4: qsize=0, full=False
+ 18337 MainThread main main loop 9 node mode= split_loop
+ 18338 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 18338 MainThread main in pipe qsize=10, full=True
+ 18338 MainThread main 0: qsize=0, full=False
+ 18338 MainThread main 1: qsize=0, full=False
+ 18338 MainThread main 2: qsize=0, full=False
+ 18338 MainThread main 3: qsize=0, full=False
+ 18338 MainThread main 4: qsize=0, full=False
+ 20343 MainThread main main loop 10 node mode= split_loop
+ 20343 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 20343 MainThread main in pipe qsize=10, full=True
+ 20343 MainThread main 0: qsize=0, full=False
+ 20343 MainThread main 1: qsize=0, full=False
+ 20343 MainThread main 2: qsize=0, full=False
+ 20343 MainThread main 3: qsize=0, full=False
+ 20343 MainThread main 4: qsize=0, full=False
+ 22349 MainThread main main loop 11 node mode= split_loop
+ 22349 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 22350 MainThread main in pipe qsize=10, full=True
+ 22350 MainThread main 0: qsize=0, full=False
+ 22350 MainThread main 1: qsize=0, full=False
+ 22350 MainThread main 2: qsize=0, full=False
+ 22350 MainThread main 3: qsize=0, full=False
+ 22350 MainThread main 4: qsize=0, full=False
+ 24354 MainThread main main loop 12 node mode= split_loop
+ 24354 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 24355 MainThread main in pipe qsize=10, full=True
+ 24355 MainThread main 0: qsize=0, full=False
+ 24355 MainThread main 1: qsize=0, full=False
+ 24355 MainThread main 2: qsize=0, full=False
+ 24355 MainThread main 3: qsize=0, full=False
+ 24355 MainThread main 4: qsize=0, full=False
+ 26358 MainThread main main loop 13 node mode= split_loop
+ 26358 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 26359 MainThread main in pipe qsize=10, full=True
+ 26359 MainThread main 0: qsize=0, full=False
+ 26359 MainThread main 1: qsize=0, full=False
+ 26359 MainThread main 2: qsize=0, full=False
+ 26359 MainThread main 3: qsize=0, full=False
+ 26359 MainThread main 4: qsize=0, full=False
+ 28364 MainThread main main loop 14 node mode= split_loop
+ 28364 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 28364 MainThread main in pipe qsize=10, full=True
+ 28364 MainThread main 0: qsize=0, full=False
+ 28364 MainThread main 1: qsize=0, full=False
+ 28364 MainThread main 2: qsize=0, full=False
+ 28364 MainThread main 3: qsize=0, full=False
+ 28365 MainThread main 4: qsize=0, full=False
+ 30370 MainThread main main loop 15 node mode= split_loop
+ 30371 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 30371 MainThread main in pipe qsize=10, full=True
+ 30371 MainThread main 0: qsize=0, full=False
+ 30371 MainThread main 1: qsize=0, full=False
+ 30371 MainThread main 2: qsize=0, full=False
+ 30371 MainThread main 3: qsize=0, full=False
+ 30371 MainThread main 4: qsize=0, full=False
+ 32374 MainThread main main loop 16 node mode= split_loop
+ 32375 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 32375 MainThread main in pipe qsize=10, full=True
+ 32375 MainThread main 0: qsize=0, full=False
+ 32375 MainThread main 1: qsize=0, full=False
+ 32375 MainThread main 2: qsize=0, full=False
+ 32375 MainThread main 3: qsize=0, full=False
+ 32375 MainThread main 4: qsize=0, full=False
+ 34376 MainThread main main loop 17 node mode= split_loop
+ 34377 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 34377 MainThread main in pipe qsize=10, full=True
+ 34377 MainThread main 0: qsize=0, full=False
+ 34378 MainThread main 1: qsize=0, full=False
+ 34378 MainThread main 2: qsize=0, full=False
+ 34378 MainThread main 3: qsize=0, full=False
+ 34378 MainThread main 4: qsize=0, full=False
+ 36383 MainThread main main loop 18 node mode= split_loop
+ 36384 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 36384 MainThread main in pipe qsize=10, full=True
+ 36384 MainThread main 0: qsize=0, full=False
+ 36384 MainThread main 1: qsize=0, full=False
+ 36385 MainThread main 2: qsize=0, full=False
+ 36385 MainThread main 3: qsize=0, full=False
+ 36385 MainThread main 4: qsize=0, full=False
+ 38390 MainThread main main loop 19 node mode= split_loop
+ 38390 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 38390 MainThread main in pipe qsize=10, full=True
+ 38390 MainThread main 0: qsize=0, full=False
+ 38391 MainThread main 1: qsize=0, full=False
+ 38391 MainThread main 2: qsize=0, full=False
+ 38391 MainThread main 3: qsize=0, full=False
+ 38391 MainThread main 4: qsize=0, full=False
+ 40395 MainThread main main loop 20 node mode= split_loop
+ 40396 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 40396 MainThread main in pipe qsize=10, full=True
+ 40396 MainThread main 0: qsize=0, full=False
+ 40397 MainThread main 1: qsize=0, full=False
+ 40397 MainThread main 2: qsize=0, full=False
+ 40397 MainThread main 3: qsize=0, full=False
+ 40397 MainThread main 4: qsize=0, full=False
+ 42401 MainThread main main loop 21 node mode= split_loop
+ 42402 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 42402 MainThread main in pipe qsize=10, full=True
+ 42402 MainThread main 0: qsize=0, full=False
+ 42402 MainThread main 1: qsize=0, full=False
+ 42402 MainThread main 2: qsize=0, full=False
+ 42402 MainThread main 3: qsize=0, full=False
+ 42402 MainThread main 4: qsize=0, full=False
+ 44407 MainThread main main loop 22 node mode= split_loop
+ 44407 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 44407 MainThread main in pipe qsize=10, full=True
+ 44407 MainThread main 0: qsize=0, full=False
+ 44407 MainThread main 1: qsize=0, full=False
+ 44407 MainThread main 2: qsize=0, full=False
+ 44407 MainThread main 3: qsize=0, full=False
+ 44407 MainThread main 4: qsize=0, full=False
+ 46412 MainThread main main loop 23 node mode= split_loop
+ 46412 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 46412 MainThread main in pipe qsize=10, full=True
+ 46412 MainThread main 0: qsize=0, full=False
+ 46412 MainThread main 1: qsize=0, full=False
+ 46412 MainThread main 2: qsize=0, full=False
+ 46412 MainThread main 3: qsize=0, full=False
+ 46412 MainThread main 4: qsize=0, full=False
+ 48417 MainThread main main loop 24 node mode= split_loop
+ 48418 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 48418 MainThread main in pipe qsize=10, full=True
+ 48418 MainThread main 0: qsize=0, full=False
+ 48418 MainThread main 1: qsize=0, full=False
+ 48418 MainThread main 2: qsize=0, full=False
+ 48418 MainThread main 3: qsize=0, full=False
+ 48418 MainThread main 4: qsize=0, full=False
+ 50421 MainThread main main loop 25 node mode= split_loop
+ 50422 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 50422 MainThread main in pipe qsize=10, full=True
+ 50422 MainThread main 0: qsize=0, full=False
+ 50422 MainThread main 1: qsize=0, full=False
+ 50423 MainThread main 2: qsize=0, full=False
+ 50423 MainThread main 3: qsize=0, full=False
+ 50423 MainThread main 4: qsize=0, full=False
+ 52427 MainThread main main loop 26 node mode= split_loop
+ 52428 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 52428 MainThread main in pipe qsize=10, full=True
+ 52428 MainThread main 0: qsize=0, full=False
+ 52428 MainThread main 1: qsize=0, full=False
+ 52428 MainThread main 2: qsize=0, full=False
+ 52429 MainThread main 3: qsize=0, full=False
+ 52429 MainThread main 4: qsize=0, full=False
+ 54432 MainThread main main loop 27 node mode= split_loop
+ 54432 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 54433 MainThread main in pipe qsize=10, full=True
+ 54433 MainThread main 0: qsize=0, full=False
+ 54433 MainThread main 1: qsize=0, full=False
+ 54433 MainThread main 2: qsize=0, full=False
+ 54433 MainThread main 3: qsize=0, full=False
+ 54433 MainThread main 4: qsize=0, full=False
+ 56438 MainThread main main loop 28 node mode= split_loop
+ 56438 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 56439 MainThread main in pipe qsize=10, full=True
+ 56439 MainThread main 0: qsize=0, full=False
+ 56439 MainThread main 1: qsize=0, full=False
+ 56439 MainThread main 2: qsize=0, full=False
+ 56439 MainThread main 3: qsize=0, full=False
+ 56439 MainThread main 4: qsize=0, full=False
+ 58444 MainThread main main loop 29 node mode= split_loop
+ 58455 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 58455 MainThread main in pipe qsize=10, full=True
+ 58455 MainThread main 0: qsize=0, full=False
+ 58455 MainThread main 1: qsize=0, full=False
+ 58455 MainThread main 2: qsize=0, full=False
+ 58456 MainThread main 3: qsize=0, full=False
+ 58456 MainThread main 4: qsize=0, full=False
+ 60460 MainThread main main loop 30 node mode= split_loop
+ 60460 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 60460 MainThread main in pipe qsize=10, full=True
+ 60461 MainThread main 0: qsize=0, full=False
+ 60461 MainThread main 1: qsize=0, full=False
+ 60461 MainThread main 2: qsize=0, full=False
+ 60461 MainThread main 3: qsize=0, full=False
+ 60461 MainThread main 4: qsize=0, full=False
+ 62465 MainThread main main loop 31 node mode= split_loop
+ 62465 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 62465 MainThread main in pipe qsize=10, full=True
+ 62465 MainThread main 0: qsize=0, full=False
+ 62466 MainThread main 1: qsize=0, full=False
+ 62466 MainThread main 2: qsize=0, full=False
+ 62466 MainThread main 3: qsize=0, full=False
+ 62466 MainThread main 4: qsize=0, full=False
+ 64470 MainThread main main loop 32 node mode= split_loop
+ 64471 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 64471 MainThread main in pipe qsize=10, full=True
+ 64471 MainThread main 0: qsize=0, full=False
+ 64471 MainThread main 1: qsize=0, full=False
+ 64471 MainThread main 2: qsize=0, full=False
+ 64471 MainThread main 3: qsize=0, full=False
+ 64471 MainThread main 4: qsize=0, full=False
+ 66476 MainThread main main loop 33 node mode= split_loop
+ 66476 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 66476 MainThread main in pipe qsize=10, full=True
+ 66476 MainThread main 0: qsize=0, full=False
+ 66476 MainThread main 1: qsize=0, full=False
+ 66476 MainThread main 2: qsize=0, full=False
+ 66476 MainThread main 3: qsize=0, full=False
+ 66476 MainThread main 4: qsize=0, full=False
+ 68482 MainThread main main loop 34 node mode= split_loop
+ 68482 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 68482 MainThread main in pipe qsize=10, full=True
+ 68482 MainThread main 0: qsize=0, full=False
+ 68482 MainThread main 1: qsize=0, full=False
+ 68482 MainThread main 2: qsize=0, full=False
+ 68482 MainThread main 3: qsize=0, full=False
+ 68482 MainThread main 4: qsize=0, full=False
+ 70482 MainThread main main loop 35 node mode= split_loop
+ 70482 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 70482 MainThread main in pipe qsize=10, full=True
+ 70482 MainThread main 0: qsize=0, full=False
+ 70482 MainThread main 1: qsize=0, full=False
+ 70482 MainThread main 2: qsize=0, full=False
+ 70482 MainThread main 3: qsize=0, full=False
+ 70482 MainThread main 4: qsize=0, full=False
+ 72484 MainThread main main loop 36 node mode= split_loop
+ 72484 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 72485 MainThread main in pipe qsize=10, full=True
+ 72485 MainThread main 0: qsize=0, full=False
+ 72485 MainThread main 1: qsize=0, full=False
+ 72485 MainThread main 2: qsize=0, full=False
+ 72485 MainThread main 3: qsize=0, full=False
+ 72485 MainThread main 4: qsize=0, full=False
+ 74490 MainThread main main loop 37 node mode= split_loop
+ 74490 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 74490 MainThread main in pipe qsize=10, full=True
+ 74490 MainThread main 0: qsize=0, full=False
+ 74490 MainThread main 1: qsize=0, full=False
+ 74490 MainThread main 2: qsize=0, full=False
+ 74490 MainThread main 3: qsize=0, full=False
+ 74490 MainThread main 4: qsize=0, full=False
+ 76495 MainThread main main loop 38 node mode= split_loop
+ 76495 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 76495 MainThread main in pipe qsize=10, full=True
+ 76495 MainThread main 0: qsize=0, full=False
+ 76495 MainThread main 1: qsize=0, full=False
+ 76495 MainThread main 2: qsize=0, full=False
+ 76495 MainThread main 3: qsize=0, full=False
+ 76495 MainThread main 4: qsize=0, full=False
+ 78500 MainThread main main loop 39 node mode= split_loop
+ 78501 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x127b67ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x127b67e20 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 78501 MainThread main in pipe qsize=10, full=True
+ 78501 MainThread main 0: qsize=0, full=False
+ 78501 MainThread main 1: qsize=0, full=False
+ 78501 MainThread main 2: qsize=0, full=False
+ 78501 MainThread main 3: qsize=0, full=False
+ 78501 MainThread main 4: qsize=0, full=False
+    48 ThreadPoolExecutor-0_1 find_cover_loop find_cover_loop=(1000, 2)
+    48 ThreadPoolExecutor-0_1 find_cover_loop find_cover pre-iteration, cover.shape=(1, 2) X.shape=(1000, 2)
+    48 ThreadPoolExecutor-0_1 _find_cover_iter ## In find_cover_iter adding to cover iteration 2 min dist = 1.0047534695491536 cover.shape=(1, 2)
+    49 ThreadPoolExecutor-0_1 _find_cover_iter ## In find_cover_iter adding to cover iteration 4 min dist = 1.0811048614206438 cover.shape=(2, 2)
+    49 ThreadPoolExecutor-0_1 _find_cover_iter ## In find_cover_iter adding to cover iteration 7 min dist = 1.1547460040019604 cover.shape=(3, 2)
+    49 MainThread main main loop 0 node mode= find_cover
+    59 ThreadPoolExecutor-0_1 _find_cover_iter ## In find_cover_iter adding to cover iteration 283 min dist = 1.0117114348991185 cover.shape=(4, 2)
+    60 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=running>, 'name': 'Node Loop', 'loop_counter': [1]}}
+    76 MainThread main in pipe qsize=10, full=True
+    76 ThreadPoolExecutor-0_1 _find_cover_iter find_cover_iter about to return
+    76 ThreadPoolExecutor-0_1 find_cover_loop find_cover_iter post-iteration, cover.shape=(5, 2), found=True
+    76 ThreadPoolExecutor-0_1 find_cover_loop find_cover_loop=(1000, 2)
+    76 ThreadPoolExecutor-0_1 find_cover_loop find_cover pre-iteration, cover.shape=(5, 2) X.shape=(1000, 2)
+   105 ThreadPoolExecutor-0_1 _find_cover_iter find_cover_iter about to return
+   105 ThreadPoolExecutor-0_1 find_cover_loop find_cover_iter post-iteration, cover.shape=(5, 2), found=False
+   105 ThreadPoolExecutor-0_1 find_cover_loop find_cover found cover of size (5, 2)
+   105 ThreadPoolExecutor-0_1 cover_found_callback cover_found_callback (5, 2)
+   105 ThreadPoolExecutor-0_1 refine_cover refine cover 5 iterations
+   105 ThreadPoolExecutor-0_1 refine_cover refine cover 5 iterations, data.shape=(2000, 2), cover.shape=(5, 2)
+   105 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 0
+   105 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 0 5 subsets
+   105 ThreadPoolExecutor-0_1 refine_cover refine_cover RMS=8.218762111351241
+   105 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 1
+   106 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 1 5 subsets
+   107 ThreadPoolExecutor-0_1 refine_cover refine_cover RMS=7.630715829482933
+   107 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 2
+   109 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 2 5 subsets
+   109 ThreadPoolExecutor-0_1 refine_cover refine_cover RMS=7.525599219585771
+   109 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 3
+   109 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 3 5 subsets
+   109 ThreadPoolExecutor-0_1 refine_cover refine_cover RMS=7.491495876106691
+   109 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 4
+   109 ThreadPoolExecutor-0_1 refine_cover refine cover iteration 4 5 subsets
+   109 ThreadPoolExecutor-0_1 refine_cover refine_cover RMS=7.466705972312033
+   109 ThreadPoolExecutor-0_1 cover_found_callback cover_found_callback refined (5, 2)
+   109 ThreadPoolExecutor-0_1 create_children 
+   110 ThreadPoolExecutor-0_1 create_children create_children 0, sinks=1
+   110 ThreadPoolExecutor-0_1 create_children create_children 1, sinks=2
+   110 ThreadPoolExecutor-0_1 create_children create_children 2, sinks=3
+   110 ThreadPoolExecutor-0_1 create_children create_children 3, sinks=4
+   110 ThreadPoolExecutor-0_1 create_children create_children 4, sinks=5
+   110 ThreadPoolExecutor-0_1 splits_loop splits input X shape (2000, 2)
+   111 ThreadPoolExecutor-0_1 splits_loop counters=[401. 454. 317. 441. 387.]
+  2081 MainThread main main loop 1 node mode= split_loop
+  2082 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+  2082 MainThread main in pipe qsize=10, full=True
+  2082 MainThread main 0: qsize=0, full=False
+  2082 MainThread main 1: qsize=0, full=False
+  2082 MainThread main 2: qsize=0, full=False
+  2083 MainThread main 3: qsize=0, full=False
+  2083 MainThread main 4: qsize=0, full=False
+  4088 MainThread main main loop 2 node mode= split_loop
+  4088 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+  4089 MainThread main in pipe qsize=10, full=True
+  4089 MainThread main 0: qsize=0, full=False
+  4089 MainThread main 1: qsize=0, full=False
+  4089 MainThread main 2: qsize=0, full=False
+  4089 MainThread main 3: qsize=0, full=False
+  4089 MainThread main 4: qsize=0, full=False
+  6094 MainThread main main loop 3 node mode= split_loop
+  6095 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+  6095 MainThread main in pipe qsize=10, full=True
+  6095 MainThread main 0: qsize=0, full=False
+  6095 MainThread main 1: qsize=0, full=False
+  6095 MainThread main 2: qsize=0, full=False
+  6095 MainThread main 3: qsize=0, full=False
+  6095 MainThread main 4: qsize=0, full=False
+  8097 MainThread main main loop 4 node mode= split_loop
+  8097 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+  8097 MainThread main in pipe qsize=10, full=True
+  8097 MainThread main 0: qsize=0, full=False
+  8097 MainThread main 1: qsize=0, full=False
+  8097 MainThread main 2: qsize=0, full=False
+  8097 MainThread main 3: qsize=0, full=False
+  8097 MainThread main 4: qsize=0, full=False
+ 10102 MainThread main main loop 5 node mode= split_loop
+ 10103 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 10103 MainThread main in pipe qsize=10, full=True
+ 10103 MainThread main 0: qsize=0, full=False
+ 10103 MainThread main 1: qsize=0, full=False
+ 10103 MainThread main 2: qsize=0, full=False
+ 10103 MainThread main 3: qsize=0, full=False
+ 10103 MainThread main 4: qsize=0, full=False
+ 12109 MainThread main main loop 6 node mode= split_loop
+ 12109 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 12109 MainThread main in pipe qsize=10, full=True
+ 12110 MainThread main 0: qsize=0, full=False
+ 12110 MainThread main 1: qsize=0, full=False
+ 12110 MainThread main 2: qsize=0, full=False
+ 12110 MainThread main 3: qsize=0, full=False
+ 12110 MainThread main 4: qsize=0, full=False
+ 14114 MainThread main main loop 7 node mode= split_loop
+ 14115 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 14115 MainThread main in pipe qsize=10, full=True
+ 14115 MainThread main 0: qsize=0, full=False
+ 14115 MainThread main 1: qsize=0, full=False
+ 14115 MainThread main 2: qsize=0, full=False
+ 14116 MainThread main 3: qsize=0, full=False
+ 14116 MainThread main 4: qsize=0, full=False
+ 16117 MainThread main main loop 8 node mode= split_loop
+ 16118 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 16118 MainThread main in pipe qsize=10, full=True
+ 16118 MainThread main 0: qsize=0, full=False
+ 16118 MainThread main 1: qsize=0, full=False
+ 16118 MainThread main 2: qsize=0, full=False
+ 16118 MainThread main 3: qsize=0, full=False
+ 16119 MainThread main 4: qsize=0, full=False
+ 18121 MainThread main main loop 9 node mode= split_loop
+ 18121 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 18122 MainThread main in pipe qsize=10, full=True
+ 18122 MainThread main 0: qsize=0, full=False
+ 18122 MainThread main 1: qsize=0, full=False
+ 18122 MainThread main 2: qsize=0, full=False
+ 18122 MainThread main 3: qsize=0, full=False
+ 18122 MainThread main 4: qsize=0, full=False
+ 20122 MainThread main main loop 10 node mode= split_loop
+ 20123 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 20123 MainThread main in pipe qsize=10, full=True
+ 20123 MainThread main 0: qsize=0, full=False
+ 20124 MainThread main 1: qsize=0, full=False
+ 20124 MainThread main 2: qsize=0, full=False
+ 20124 MainThread main 3: qsize=0, full=False
+ 20124 MainThread main 4: qsize=0, full=False
+ 22125 MainThread main main loop 11 node mode= split_loop
+ 22125 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 22125 MainThread main in pipe qsize=10, full=True
+ 22126 MainThread main 0: qsize=0, full=False
+ 22126 MainThread main 1: qsize=0, full=False
+ 22126 MainThread main 2: qsize=0, full=False
+ 22126 MainThread main 3: qsize=0, full=False
+ 22126 MainThread main 4: qsize=0, full=False
+ 24130 MainThread main main loop 12 node mode= split_loop
+ 24131 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 24131 MainThread main in pipe qsize=10, full=True
+ 24131 MainThread main 0: qsize=0, full=False
+ 24131 MainThread main 1: qsize=0, full=False
+ 24131 MainThread main 2: qsize=0, full=False
+ 24131 MainThread main 3: qsize=0, full=False
+ 24132 MainThread main 4: qsize=0, full=False
+ 26135 MainThread main main loop 13 node mode= split_loop
+ 26135 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 26135 MainThread main in pipe qsize=10, full=True
+ 26135 MainThread main 0: qsize=0, full=False
+ 26135 MainThread main 1: qsize=0, full=False
+ 26135 MainThread main 2: qsize=0, full=False
+ 26135 MainThread main 3: qsize=0, full=False
+ 26136 MainThread main 4: qsize=0, full=False
+ 28138 MainThread main main loop 14 node mode= split_loop
+ 28138 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 28138 MainThread main in pipe qsize=10, full=True
+ 28138 MainThread main 0: qsize=0, full=False
+ 28138 MainThread main 1: qsize=0, full=False
+ 28138 MainThread main 2: qsize=0, full=False
+ 28138 MainThread main 3: qsize=0, full=False
+ 28138 MainThread main 4: qsize=0, full=False
+ 30143 MainThread main main loop 15 node mode= split_loop
+ 30144 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 30144 MainThread main in pipe qsize=10, full=True
+ 30145 MainThread main 0: qsize=0, full=False
+ 30146 MainThread main 1: qsize=0, full=False
+ 30146 MainThread main 2: qsize=0, full=False
+ 30146 MainThread main 3: qsize=0, full=False
+ 30146 MainThread main 4: qsize=0, full=False
+ 32148 MainThread main main loop 16 node mode= split_loop
+ 32148 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 32148 MainThread main in pipe qsize=10, full=True
+ 32148 MainThread main 0: qsize=0, full=False
+ 32148 MainThread main 1: qsize=0, full=False
+ 32148 MainThread main 2: qsize=0, full=False
+ 32148 MainThread main 3: qsize=0, full=False
+ 32148 MainThread main 4: qsize=0, full=False
+ 34153 MainThread main main loop 17 node mode= split_loop
+ 34154 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 34154 MainThread main in pipe qsize=10, full=True
+ 34154 MainThread main 0: qsize=0, full=False
+ 34154 MainThread main 1: qsize=0, full=False
+ 34154 MainThread main 2: qsize=0, full=False
+ 34154 MainThread main 3: qsize=0, full=False
+ 34154 MainThread main 4: qsize=0, full=False
+ 36159 MainThread main main loop 18 node mode= split_loop
+ 36160 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 36160 MainThread main in pipe qsize=10, full=True
+ 36160 MainThread main 0: qsize=0, full=False
+ 36160 MainThread main 1: qsize=0, full=False
+ 36161 MainThread main 2: qsize=0, full=False
+ 36161 MainThread main 3: qsize=0, full=False
+ 36161 MainThread main 4: qsize=0, full=False
+ 38164 MainThread main main loop 19 node mode= split_loop
+ 38164 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 38164 MainThread main in pipe qsize=10, full=True
+ 38164 MainThread main 0: qsize=0, full=False
+ 38164 MainThread main 1: qsize=0, full=False
+ 38164 MainThread main 2: qsize=0, full=False
+ 38164 MainThread main 3: qsize=0, full=False
+ 38164 MainThread main 4: qsize=0, full=False
+ 40170 MainThread main main loop 20 node mode= split_loop
+ 40170 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 40170 MainThread main in pipe qsize=10, full=True
+ 40170 MainThread main 0: qsize=0, full=False
+ 40170 MainThread main 1: qsize=0, full=False
+ 40171 MainThread main 2: qsize=0, full=False
+ 40171 MainThread main 3: qsize=0, full=False
+ 40171 MainThread main 4: qsize=0, full=False
+ 42175 MainThread main main loop 21 node mode= split_loop
+ 42176 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 42176 MainThread main in pipe qsize=10, full=True
+ 42176 MainThread main 0: qsize=0, full=False
+ 42176 MainThread main 1: qsize=0, full=False
+ 42176 MainThread main 2: qsize=0, full=False
+ 42176 MainThread main 3: qsize=0, full=False
+ 42176 MainThread main 4: qsize=0, full=False
+ 44177 MainThread main main loop 22 node mode= split_loop
+ 44177 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 44177 MainThread main in pipe qsize=10, full=True
+ 44177 MainThread main 0: qsize=0, full=False
+ 44177 MainThread main 1: qsize=0, full=False
+ 44177 MainThread main 2: qsize=0, full=False
+ 44177 MainThread main 3: qsize=0, full=False
+ 44177 MainThread main 4: qsize=0, full=False
+ 46183 MainThread main main loop 23 node mode= split_loop
+ 46183 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 46183 MainThread main in pipe qsize=10, full=True
+ 46183 MainThread main 0: qsize=0, full=False
+ 46183 MainThread main 1: qsize=0, full=False
+ 46184 MainThread main 2: qsize=0, full=False
+ 46184 MainThread main 3: qsize=0, full=False
+ 46184 MainThread main 4: qsize=0, full=False
+ 48186 MainThread main main loop 24 node mode= split_loop
+ 48186 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 48186 MainThread main in pipe qsize=10, full=True
+ 48186 MainThread main 0: qsize=0, full=False
+ 48186 MainThread main 1: qsize=0, full=False
+ 48186 MainThread main 2: qsize=0, full=False
+ 48186 MainThread main 3: qsize=0, full=False
+ 48186 MainThread main 4: qsize=0, full=False
+ 50191 MainThread main main loop 25 node mode= split_loop
+ 50191 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 50192 MainThread main in pipe qsize=10, full=True
+ 50192 MainThread main 0: qsize=0, full=False
+ 50192 MainThread main 1: qsize=0, full=False
+ 50192 MainThread main 2: qsize=0, full=False
+ 50192 MainThread main 3: qsize=0, full=False
+ 50192 MainThread main 4: qsize=0, full=False
+ 52193 MainThread main main loop 26 node mode= split_loop
+ 52193 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 52193 MainThread main in pipe qsize=10, full=True
+ 52193 MainThread main 0: qsize=0, full=False
+ 52193 MainThread main 1: qsize=0, full=False
+ 52193 MainThread main 2: qsize=0, full=False
+ 52193 MainThread main 3: qsize=0, full=False
+ 52193 MainThread main 4: qsize=0, full=False
+ 54194 MainThread main main loop 27 node mode= split_loop
+ 54197 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 54197 MainThread main in pipe qsize=10, full=True
+ 54197 MainThread main 0: qsize=0, full=False
+ 54197 MainThread main 1: qsize=0, full=False
+ 54197 MainThread main 2: qsize=0, full=False
+ 54197 MainThread main 3: qsize=0, full=False
+ 54197 MainThread main 4: qsize=0, full=False
+ 56199 MainThread main main loop 28 node mode= split_loop
+ 56200 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 56200 MainThread main in pipe qsize=10, full=True
+ 56200 MainThread main 0: qsize=0, full=False
+ 56200 MainThread main 1: qsize=0, full=False
+ 56200 MainThread main 2: qsize=0, full=False
+ 56200 MainThread main 3: qsize=0, full=False
+ 56200 MainThread main 4: qsize=0, full=False
+ 58200 MainThread main main loop 29 node mode= split_loop
+ 58201 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 58201 MainThread main in pipe qsize=10, full=True
+ 58202 MainThread main 0: qsize=0, full=False
+ 58202 MainThread main 1: qsize=0, full=False
+ 58202 MainThread main 2: qsize=0, full=False
+ 58202 MainThread main 3: qsize=0, full=False
+ 58202 MainThread main 4: qsize=0, full=False
+ 60202 MainThread main main loop 30 node mode= split_loop
+ 60203 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 60203 MainThread main in pipe qsize=10, full=True
+ 60203 MainThread main 0: qsize=0, full=False
+ 60203 MainThread main 1: qsize=0, full=False
+ 60203 MainThread main 2: qsize=0, full=False
+ 60203 MainThread main 3: qsize=0, full=False
+ 60203 MainThread main 4: qsize=0, full=False
+ 62204 MainThread main main loop 31 node mode= split_loop
+ 62205 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 62205 MainThread main in pipe qsize=10, full=True
+ 62205 MainThread main 0: qsize=0, full=False
+ 62205 MainThread main 1: qsize=0, full=False
+ 62205 MainThread main 2: qsize=0, full=False
+ 62205 MainThread main 3: qsize=0, full=False
+ 62206 MainThread main 4: qsize=0, full=False
+ 64210 MainThread main main loop 32 node mode= split_loop
+ 64211 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 64211 MainThread main in pipe qsize=10, full=True
+ 64211 MainThread main 0: qsize=0, full=False
+ 64211 MainThread main 1: qsize=0, full=False
+ 64211 MainThread main 2: qsize=0, full=False
+ 64211 MainThread main 3: qsize=0, full=False
+ 64211 MainThread main 4: qsize=0, full=False
+ 66212 MainThread main main loop 33 node mode= split_loop
+ 66212 MainThread main {1: {'run_flag': [True], 'future': <Future at 0x11c942ac0 state=running>, 'name': 'File Streamer', 'loop_counter': [2]}, 2: {'run_flag': [True], 'future': <Future at 0x11c942e80 state=finished raised AttributeError>, 'name': 'Node Loop', 'loop_counter': [3]}}
+ 66212 MainThread main in pipe qsize=10, full=True
+ 66212 MainThread main 0: qsize=0, full=False
+ 66212 MainThread main 1: qsize=0, full=False
+ 66212 MainThread main 2: qsize=0, full=False
+ 66212 MainThread main 3: qsize=0, full=False
+ 66212 MainThread main 4: qsize=0, full=False

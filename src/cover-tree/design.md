@@ -36,8 +36,31 @@ The main data structure it holds is the processing tree where the nodes are find
 
 ## class pipe:
     
-## class LoopExecutor:    
+## class NodeWrpper:    
     
+"This is the function that implements the control of the tree.
+
+It starts with a file-streamer a pipe (pipe0)  and an initial node.
+
+Each node starts in a "find cover loop" mode. in which it reads from its input pipe and 
+adds elements to the cover if theey are more than epsilon away from the current cover. This stage ends
+when for a wh0le block there is no added example.
+
+Once this happens the loop is stopped, a callback is initiated to tree, and the following steps
+are taken:
+    1. the cover is refined using a few iterations of K-means (this is mostly to make the
+      probabilities of the different regions more similar.)
+    2. A child pipe and node is created for each cover point.
+    3. The (parent) node is put in a split_loop mode and the split loop is started to
+      partition first the data accumulated in the node and then data arriving at the
+      input queue.
+
+nodes and pipes are named using the prefix N and P, then a sequence of comma separated numbers.
+the semantics of which is P0 = pipe at the root. P0,0 == first pipe emanating from node 0.
+Pi,j,k,l  l'th pipe emanating from node Ni,j,k
+
+ 
+
 ## class Tree:
 This is the master coordinator part of the probabilistic cover tree
 
