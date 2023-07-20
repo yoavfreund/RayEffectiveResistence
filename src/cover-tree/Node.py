@@ -26,11 +26,11 @@ class Node:
     def get_mode(self):
         return self.mode
     
-    def __init__(self,callback,epsilon=1,p=0.01):
+    def __init__(self,callback,epsilon=1.,p=0.01):
         """create a node
 
         Args:
-            epsilon (int, optional): The max distance between cover points. Defaults to 2700.
+            epsilon (float, optional): The max distance beetween a centroid and any point in the cover. Defaults to 1.
             p (float, optional): The probability of a point further from epsilon from any point in the cover. Defaults to 0.01.
         """
         
@@ -40,28 +40,35 @@ class Node:
         self.cover=None
         self.set_mode('find_cover')
         self.accum_data=[]
+        self.counters=None
         
     def master_loop(self,X):
-        mode=self.get_mode()
-        if mode=='find_cover':
-            self.find_cover_loop(X)
-            return None
-     
-        if mode=='split_loop':
-            subsets=self.splits_loop(X)
-            return subsets
+        try:
+            mode=self.get_mode()
+            if mode=='find_cover':
+                self.find_cover_loop(X)
+                return None
         
-        # else
-        return None
-    
-    def find_cover_loop(self,X,first):
+            if mode=='split_loop':
+                subsets=self.splits_loop(X)
+                return subsets
+            
+            # else
+            return None
+        except Exception as exc:
+            logger.exception(f'exception {exc}')
+        
+    def find_cover_loop(self,X, first=None):
         """This method is executed in a loop executor. It finds the cover points"""
-        logger.info(f'find_cover_loop={X.shape}')
+        logger.info(f'find_cover_loop={X}')
         if X.shape[0]>0:
             self.accum_data.append(X)
             cover=self.cover
             if cover is None:
-                cover=first  # use first example as first cover point
+                if not first is None:
+                    cover=first  # set first cover point
+                else:
+                    cover=X[0:1,:]  # use first example as first cover point
             
             logger.info(f'find_cover pre-iteration, cover.shape={cover.shape} X.shape={X.shape}')
             self.cover,self.found=self._find_cover_iter(cover,X)

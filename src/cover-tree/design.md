@@ -75,3 +75,11 @@ send the pipes to the node and change it's mode to pass through. mode=2
 Create children nodes.   
 
 
+## interface to solver
+The tree outputs, for each level of the tree, a weighted epsilon cover, which is a list of 
+pairs(X,w) where X is the centroid represented as an array and w is the weight (fraction of examples that fall in bin)
+
+In addition, the tree exposes an interface for finding the near neighbors of a centroid:
+Input: a center C, a level in the tree, max distance
+output: all of the centers within the level of the tree that are at most max distance from C.
+For each center, the output is the point and the distance from C to the point.

@@ -4,7 +4,7 @@ from Node import Node
 from pipe import pipe
 
 logger = log.getLogger('NodeWrapper')
-logger.setLevel(log.WARNING)
+logger.setLevel(log.INFO)
  
 class LoopExecutor:
    
@@ -15,16 +15,19 @@ class LoopExecutor:
       logger.info('__init__')
       
    def start_thread(self,f,name,*args,**kwargs):
-      loop_counter=[0]
-      self.futures_counter+=1
-      self.executor._max_workers=self.futures_counter+1
-      logger.info(f'executor={self.executor.__str__()}, name={name}  max_workers={self.executor._max_workers}')
-      future=self.executor.submit(f,loop_counter,*args,**kwargs)
+      try:
+         loop_counter=[0]
+         self.futures_counter+=1
+         self.executor._max_workers=self.futures_counter+1
+         logger.info(f'executor={self.executor.__str__()}, name={name}  max_workers={self.executor._max_workers}')
+         future=self.executor.submit(f,loop_counter,*args,**kwargs)
 
-      self.futures[self.futures_counter]={'future':future,
-                                          'name':name,
-                                          'loop_counter':loop_counter
-                                          }
+         self.futures[self.futures_counter]={'future':future,
+                                             'name':name,
+                                             'loop_counter':loop_counter
+                                             }
+      except Exception as exc:
+         logger.exception(f'exception {exc}') 
 
          
          
@@ -39,7 +42,7 @@ class NodeWrapper:
           outpipes (list): The output pipes
           
       """
-      self.executroe=executor
+      self.executor=executor
       self.node=node
       self.name=name
       self.inpipe=inpipe
@@ -58,20 +61,24 @@ class NodeWrapper:
       Args:
           loop_counter (int]): A counter that is incremented each time the loop is executed. This is used to check if the loop is still running.
       """
-
-      while True:
-         if self.node.get_mode()=='idle':
-            continue
-         loop_counter[0]+=1
-         X=self.node.inpipe.get()
-         subsets = self.node.master_loop(X)
-         if not subsets is None:
-            if not self.node.outpipes is None:
-               assert len(self.node.outpipes)==len(subsets)
-               for i in range(len(subsets)):
-                  self.nodesinks[i].put(subsets[i])
-         logger.info(f'NodeWrapper for {self.nodename} counter={loop_counter[0]}')
-         
+      try:
+         while True:
+            if self.node.get_mode()=='idle':
+               continue
+            X=self.node.inpipe.get()
+            if X is None:
+               continue
+            loop_counter[0]+=1
+            logger.info(f'NodeWrapper for {self.nodename} counter={loop_counter[0]}, X={X.shape}')
+            subsets = self.node.master_loop(X)
+            if not subsets is None:
+               if not self.node.outpipes is None:
+                  assert len(self.node.outpipes)==len(subsets)
+                  for i in range(len(subsets)):
+                     self.nodesinks[i].put(subsets[i])
+            logger.info(f'NodeWrapper for {self.nodename} counter={loop_counter[0]}')
+      except Exception as exc:
+         logger.exception(f'exception {exc}')
          #if self.nodeprintme:
          #   print_subsets(subsets)  #  prints the subsets as rows in a csv file needs to use a lock to regulate printing from different threads
 
@@ -80,9 +87,10 @@ class NodeWrapper:
          
          self.inpipenode=Node(self,epsilon=self.epsilon)
          self.node.set_mode('find_cover')
-       
+         self.pid=self.executor.start_thread(self.node.master_loop,self.name)
+
          logger.info(f'_start {self.name}')
-         return self.futures_counter
+         return executor.futures_counter
       except Exception as exc:
          logger.exception(f'exception {exc}')
    
@@ -116,16 +124,20 @@ class NodeWrapper:
 
 class FileStreamer: 
    def __init__(self,filename:str,pipe0:pipe,loop_counter:list,executor:LoopExecutor):
-      self.filename=filename
-      self.pipe0=pipe0
-      self.loop_counter=loop_counter
-      self.executor=executor
-      with open(filename,'rb') as in_handle:
-         import numpy as np
-         self.data=np.load(in_handle,allow_pickle=True)
-      logger.info('__init__')
       
-   def file_loop(self,filename:str, loop_counter:list):
+      try: 
+         self.filename=filename
+         self.pipe0=pipe0
+         self.loop_counter=loop_counter
+         self.executor=executor
+         with open(filename,'rb') as in_handle:
+            import numpy as np
+            self.data=np.load(in_handle,allow_pickle=True)
+         logger.info('__init__')
+      except Exception as exc:
+         logger.exception(f'exception {exc}')
+      
+   def file_loop(self, loop_counter:list):
      
       try:
          while True:
@@ -134,7 +146,7 @@ class FileStreamer:
             logger.info(f'file_streamer put returned {state}   data.shape={self.data.shape}')
 
       except Exception as exc:
-            log.exception(f'exception {exc}') 
+         logger.exception(f'exception {exc}') 
       return False
 
    def _start(self):
@@ -145,18 +157,26 @@ class FileStreamer:
          logger.exception(f'exception {exc}')
 if __name__=='__main__':
 
-
-   executor=LoopExecutor()
-   inpipe=pipe(block_size=100)
-   loop_counter=[0]
-   fileStreamer=FileStreamer('../../data/square.npy',inpipe,loop_counter,executor)
-   fileStreamer._start()
-   logger.warning(f'fileStreamer={fileStreamer}',executor_list={str(executor.futures)})
+   try:
+      executor=LoopExecutor()
+      inpipe=pipe(block_size=100)
+      loop_counter=[0]
+      fileStreamer=FileStreamer('../../data/square.npy',inpipe,loop_counter,executor)
+      fileStreamer._start()
+      logger.warning(f'fileStreamer={fileStreamer},executor_list={str(executor.futures)}')
+      
+      node=Node(None,epsilon=1)
+      nw=NodeWrapper(executor,node=node,name='test',inpipe=inpipe,epsilon=1,p=0.01)
+      node.callback=nw.cover_found_callback
+      
+      nw._start()
+      logger.warning(f'NodeWrapper={nw},executor_list={str(executor.futures)}')
+      
+      from time import sleep
+      sleep(10)
+   except Exception as exc:
+         logger.exception(f'exception {exc}')
    
-   #nw=NodeWrapper(node=None,name='test',outpipes=None)
-   #pipe0=pipe(block_size=nw.block_size)
-   
-   #self.pid_file_loop=self.executor._start(self.file_streamer,'File Streamer')
 
 
   
